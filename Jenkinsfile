@@ -6,4 +6,5 @@ index(scmUrl: 'https://github.com/Sushant-Gandalwar/docker-html-hello-world.git'
               dockerDirectory: '/var/lib/jenkins/workspace/demo2',
               dockerImage: 'https://hub.docker.com/orgs',
               dockerCredentialsId: 'sushantgandalwar',
-              dockerCredentialsPass: 'Sush900123@')
+              dockerCredentialsPass: 'Sush900123@',
+              dockerUsername: 'sushant900123')
