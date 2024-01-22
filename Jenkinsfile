@@ -5,5 +5,5 @@ index(
     appName: 'react-app',
     dockerDirectory: '/var/lib/jenkins/workspace/demo2',
     dockerImage: 'baseImage',
-    dockerCredentialsId: 'sushantgandalwar-docker'
+    dockerCredentialsId: 'Jenkins'
 )
