@@ -2,7 +2,7 @@
 FROM nginx:latest
 
 # Copy custom HTML file to the default Nginx web root directory
-COPY ..
+COPY index.html /usr/share/nginx/html/
 
 # Expose port 80 for incoming HTTP traffic
 EXPOSE 80
