@@ -2,10 +2,11 @@
 FROM nginx:latest
 
 # Create a directory named "myapp" within the container
-RUN mkdir /usr/share/nginx/html/myapp
+# RUN mkdir /usr/share/nginx/html/myapp
+WORKDIR /app
 
 # Copy custom HTML file to the created directory
-COPY index.html /usr/share/nginx/html/myapp/
+COPY ..
 
 # Expose port 80 for incoming HTTP traffic
 EXPOSE 80
