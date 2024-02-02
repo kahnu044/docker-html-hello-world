@@ -1,8 +1,11 @@
 # Use the official Nginx base image
 FROM nginx:latest
 
-# Copy custom HTML file to the default Nginx web root directory
-COPY index.html /usr/share/nginx/html/
+# Create a directory named "myapp" within the container
+RUN mkdir /usr/share/nginx/html/myapp
+
+# Copy custom HTML file to the created directory
+COPY index.html /usr/share/nginx/html/myapp/
 
 # Expose port 80 for incoming HTTP traffic
 EXPOSE 80
