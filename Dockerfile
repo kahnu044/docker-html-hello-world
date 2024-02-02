@@ -6,7 +6,7 @@ FROM nginx:latest
 WORKDIR /app
 
 # Copy custom HTML file to the created directory
-COPY ..
+COPY . .
 
 # Expose port 80 for incoming HTTP traffic
 EXPOSE 80
