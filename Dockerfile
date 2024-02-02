@@ -1,11 +1,10 @@
 # Use the official Nginx base image
 FROM nginx:latest
 
-# Create a directory named "myapp" within the container
-# RUN mkdir /usr/share/nginx/html/myapp
+# Set the working directory to /app
 WORKDIR /app
 
-# Copy custom HTML file to the created directory
+# Copy the entire build context into the container's /app directory
 COPY . .
 
 # Expose port 80 for incoming HTTP traffic
