@@ -2,8 +2,9 @@
 
 index(
     scmUrl: 'https://github.com/Sushant-Gandalwar/docker-html-hello-world.git',
-    appName: 'react-app',
-    dockerDirectory: '/var/lib/jenkins/workspace/demo ',
+     appName: 'react-app-demo6',
+    git :'sushant-git',
+    dockerDirectory: '/var/lib/jenkins/workspace/dem',
     dockerImage: 'gcr.io/jenkins-407204/demo',
-     dockerCredentialsId: '404b3183-6431-48ad-b984-2316e79f2cfd'
+    dockerCredentialsId: 'f3d27808a72f4b4584aa7f7edd4447d1'
 )
