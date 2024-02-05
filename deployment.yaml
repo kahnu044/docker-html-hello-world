@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: nginx-deployment-loadbalancer
+  labels:
+    app: nginx-app-loadbalancer
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: nginx-app-loadbalancer
+  template:
+    metadata:
+      labels:
+        app: nginx-app-loadbalancer
+    spec:
+      containers:
+      - name: nginx-container
+        image: gcr.io/jenkins-407204/demo:tagversion
+        ports:
+        - containerPort: 80
