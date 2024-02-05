@@ -1,5 +1,5 @@
-# Use a lightweight web server as the base image
-FROM nginx:alpine
-
-# Copy the HTML file to the web server's document root
-COPY index.html /usr/share/nginx/html
+FROM nginx:latest
+RUN mkdir /usr/share/nginx/html/myapp
+COPY index.html /usr/share/nginx/html/myapp/
+EXPOSE 80
+CMD ["nginx", "-g", "daemon off;"]
